@@ -23,7 +23,7 @@ $form->addElement(new Textarea('comments', Session::get('comments')));
 $select = new Select('country');
 $select->addOption('fr', 'France');
 $select->addOption('us', 'USA');
-$select->addOption('jp', 'Japan');
+$select->addOption('DRC', 'Congo');
 $form->addElement($select);
 
 $form->addElement(new Checkbox('newsletter', 'yes', 'Subscribe to newsletter'));
@@ -33,4 +33,3 @@ $form->addElement(new Input('file', 'document'));
 $form->addElement(new Button('submit', 'Submit'));
 
 echo $form->render();
-?>

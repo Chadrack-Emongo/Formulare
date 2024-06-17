@@ -1,8 +1,7 @@
 <?php
 
-require 'HTMLElement.php';
 class Cookie {
-    public static function set($key, $value, $expire) {
+    public static function set($key,string $value, int $expire) {
         setcookie($key, $value, $expire);
     }
 
@@ -10,3 +9,4 @@ class Cookie {
         return $_COOKIE[$key] ?? null;
     }
 }
+

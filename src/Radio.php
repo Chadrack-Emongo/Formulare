@@ -1,8 +1,8 @@
 <?php
 
-require 'HTMLElement.php';
+require 'src/HTMLElement.php';
 class Radio extends HTMLElement {
-    public function __construct($name, $value, $label) {
+    public function __construct( string $name,string $value,string $label) {
         parent::__construct('input');
         $this->setAttribute('type', 'radio');
         $this->setAttribute('name', $name);

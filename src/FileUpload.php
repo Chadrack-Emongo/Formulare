@@ -1,6 +1,5 @@
 <?php
 
-require 'HTMLElement.php';
 class FileUpload {
     private $file;
 

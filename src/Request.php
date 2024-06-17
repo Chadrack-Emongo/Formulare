@@ -1,6 +1,6 @@
 <?php
 
-require 'HTMLElement.php';
+require 'src/HTMLElement.php';
 class Request {
     public static function get($key) {
         return $_GET[$key] ?? null;

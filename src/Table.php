@@ -1,6 +1,6 @@
 <?php
 
-require 'HTMLElement.php';
+require 'src/HTMLElement.php';
 class Table extends HTMLElement {
     private $rows = [];
 

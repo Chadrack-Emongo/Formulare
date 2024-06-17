@@ -1,6 +1,6 @@
 <?php
 
-require 'HTMLElement.php';
+require 'src/HTMLElement.php';
 class Form extends HTMLElement {
     private $elements = [];
 
@@ -21,3 +21,5 @@ class Form extends HTMLElement {
         return parent::render();
     }
 }
+
+

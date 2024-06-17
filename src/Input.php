@@ -1,6 +1,7 @@
 <?php
 
-require 'HTMLElement.php';
+require 'src/HTMLElement.php';
+
 class Input extends HTMLElement {
     public function __construct($type, $name, $value = '') {
         parent::__construct('input');

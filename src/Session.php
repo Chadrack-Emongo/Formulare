@@ -1,6 +1,6 @@
 <?php
 
-require 'HTMLElement.php';
+require 'src/HTMLElement.php';
 class Session {
     public static function start() {
         if (session_status() == PHP_SESSION_NONE) {
@@ -8,7 +8,7 @@ class Session {
         }
     }
 
-    public static function set($key, $value) {
+    public static function set($key, string $value) {
         $_SESSION[$key] = $value;
     }
 
